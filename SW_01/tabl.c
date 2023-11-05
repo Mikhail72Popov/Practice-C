@@ -15,4 +15,5 @@ int main(int argc, char **argv) {
     printf("|uint64_t  |8          |0                        |18446744073709551615    |\n");
     printf("|float     |4          |-3,4028235E+38           |3,4028235E+38           |\n");
     printf("| double   |8          |-1,7976931348623157E+308 |1,7976931348623157E+308 |\n");
+    printf("\n");
 }

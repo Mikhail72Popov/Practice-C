@@ -1,15 +1,16 @@
-include make-compose.mk
 
-all: statistic
+all: prog
+	./prog
 
-statistic: main.o temp_functions.o
-	gcc main.o temp_functions.o -o statistic.exe
+prog: main.o temp_functions.o
+	gcc -o main.o temp_functions.o 
 	
-main.o:
+main.o: 
 	gcc -c main.c
 	
 temp_functions.o:
 	gcc -c temp_functions.c
 	
-rm:
-	del *.o statistic.exe
+clean:
+	rm -rf *.o prog
+
